@@ -85,6 +85,9 @@ if all_poems:
         key="mode_selector"
     )
 
+    st.sidebar.markdown("---")
+    st.sidebar.caption("このアプリはGeminiの支援を受けて作成されました。")
+
     # モードが変更された場合、または初回起動時にクイズを初期化
     if "mode" not in st.session_state or st.session_state.mode != mode:
         initialize_quiz(mode)
