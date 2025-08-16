@@ -1,0 +1,79 @@
+# 百人一首クイズ 🌸
+
+Streamlitで作成した、百人一首の上の句から下の句を当てる4択クイズアプリです。
+クイズを楽しみながら、歌の意味や背景にある物語を学ぶことができます。
+
+## 概要
+
+このアプリケーションは、日本の古典文学である百人一首を手軽に学べるように設計されています。ユーザーは表示される上の句に対して、4つの選択肢の中から正しい下の句を選びます。回答後には、歌の背景や詠み人、文学的なポイントなどの詳しい解説が表示され、知識を深めることができます。
+
+## 主な機能
+
+- **4択クイズ**: 上の句が表示され、4つの選択肢から対応する下の句を選びます。
+- **出題モード**: 「ID順」と「ランダム」の2つのモードから出題順を選べます。
+- **詳しい解説**: 回答後には、歌の詠み人、全文、現代語訳や背景などの詳しい解説が表示されます。
+- **スコア表示**: クイズ終了後には正解数を表示し、達成感を味わえます。
+- **レスポンシブデザイン**: PCでもスマートフォンでも快適に利用できるよう、表示が最適化されます。
+
+## スクリーンショット
+
+*（ここにアプリのスクリーンショットやGIFを挿入すると、より分かりやすくなります）*
+
+## 使用技術
+
+- **言語**: Python
+- **フレームワーク**: Streamlit
+- **データ形式**: JSON
+
+## セットアップと実行方法 (ローカル環境)
+
+1.  このリポジトリをクローンします。
+    ```bash
+    git clone https://github.com/your-username/HyakuninIsshu_gemini.git
+    cd HyakuninIsshu_gemini
+    ```
+
+2.  Pythonの仮想環境を作成し、有効化します。
+    ```bash
+    # macOS / Linux
+    python3 -m venv venv
+    source venv/bin/activate
+
+    # Windows
+    python -m venv venv
+    venv\Scripts\activate
+    ```
+
+3.  必要なライブラリをインストールします。
+    ```bash
+    pip install -r requirements.txt
+    ```
+
+4.  Streamlitアプリを実行します。
+    ```bash
+    streamlit run app.py
+    ```
+    実行後、ブラウザで `http://localhost:8501` が自動的に開きます。
+
+## デプロイ (Streamlit Community Cloud)
+
+このアプリはStreamlit Community Cloudに簡単にデプロイできます。
+
+1.  このリポジトリをご自身のGitHubアカウントにフォークまたはプッシュします。
+2.  Streamlit Community Cloudにログインし、「New app」からフォークしたリポジトリを選択します。
+3.  `Main file path` が `app.py` になっていることを確認し、「Deploy!」ボタンをクリックします。
+
+## ファイル構成
+
+```
+.
+├── app.py                  # Streamlitアプリケーションのメインスクリプト
+├── hyakunin_isshu.json     # 百人一首のデータファイル
+├── requirements.txt        # 依存ライブラリリスト
+├── .gitignore              # Gitの管理対象外ファイル設定
+└── README.md               # このファイル
+```
+
+## ライセンス
+
+このプロジェクトはMITライセンスの下で公開されています。
